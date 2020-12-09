@@ -1,11 +1,13 @@
-<!--  Usuarios:String[]= [ nombre , lastName , edad, Foto, Descripció, Correu, Contrasenya,] -->
-<div *ngIf="selected">
-
-<p>Nombre: {{selected.nombre}}</p>
-<p>Apellido: {{selected.cognombre}}</p>
-<p>Edad: {{selected.edad}}</p>
-<p>foto: {{selected.foto}}</p>
-<p>Descripcion: {{selected.Descripcion}}</p>
-<p>correo: {{selected.correo}}</p>
-<p>contrasenya: {{selected.contrasenya}}</p>
+<div *ngIf = "selected" class="col-md-6">
+  <div class="list-group list-group-flush">
+    <br>
+    <h4>Detalles de {{selected.nombre}}:</h4>
+    <p class="list-group-item"><b>Nombre:</b> {{selected.nombre}}</p>
+    <p class="list-group-item"><b>Apellido:</b> {{selected.cognombre}}</p>
+    <p class="list-group-item"><b>Edad:</b> {{selected.edad}}</p>
+    <p class="list-group-item"><b>Foto:</b> {{selected.foto}}</p>
+    <p class="list-group-item"><b>Descripción:</b> {{selected.Descripcion}}</p>
+    <p class="list-group-item"><b>Correo:</b> {{selected.correo}}</p>
+    <p class="list-group-item"><b>Contraseña:</b> {{selected.contrasenya}}</p>
+  </div>
 </div>
