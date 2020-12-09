@@ -1,0 +1,8 @@
+<div class="col">
+  <div class="list-group">
+    <a *ngFor="let usuario of usuariosArray" class="list-group-item list-group-item-action"
+      >{{usuario.nombre }}  <button type="button" class="btn btn-danger cl-ls" (click)="borrar(usuario)">Borrar usuario</button></a>
+  </div>
+
+
+

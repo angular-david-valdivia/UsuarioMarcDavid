@@ -1,0 +1,56 @@
+<form #itemForm="ngForm" (ngSubmit)="onFormSubmit(itemForm)">
+
+  <div class="form-group col-md-6">
+    <label for="nombre">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="nombre" name="nombre" ngModel required>
+  </div>
+
+                                                        <!--
+                                                          // public nombre: string,
+                                                          // public cognombre: String,
+                                                          // public edad: number,
+                                                          // public foto: String,
+                                                          // public Descripcion: String,
+                                                          // public correo: String,
+                                                          // public contraseña: String, -->
+  <div class="form-group col-md-6">
+    <label for="Apellido">Apellido</label>
+    <input type="text" class="form-control" id="Apellido" placeholder="Apellido" name="cognombre" ngModel required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="edad">Edad</label>
+    <input type="text" class="form-control" id="edad" placeholder="Edad" name="edad" ngModel required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="foto">Foto</label>
+    <input type="text" class="form-control" id="foto" placeholder="Foto" name="foto" ngModel required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="descripcion">Descripcion</label>
+    <input type="text" class="form-control" id="descripcion" placeholder="Descripcion" name="Descripcion" ngModel required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="correo">Correo</label>
+    <input type="email" class="form-control" id="correo" placeholder="Correo" name="correo" ngModel required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="contraseña">Contraseña</label >
+    <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" name="contraseña" ngModel required>
+
+  </div>
+ <div class="col-md-1">
+
+
+ <button type="submit" class="btn btn-primary">Save</button>
+
+ </div>
+
+
+  <!-- <button type="button" class="btn btn-info" (click)="nuevoUsuario = true">Nuevo Usuario</button> -->
+
+  <!-- <div *ngIf="nuevoUsuario" class="col"> -->
+ <!-- </div> -->
+
+
+
+</form>

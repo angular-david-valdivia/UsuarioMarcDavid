@@ -1,0 +1,9 @@
+<div class="col">
+  <div class="list-group">
+    <a *ngFor="let usuario of usuariosArray" class="list-group-item list-group-item-action"
+      (click)="infoUsuario(usuario)">{{usuario.nombre }}</a>
+  </div>
+  <app-perfil-detalle [selected]='selectedUsuario'></app-perfil-detalle>
+
+<button type="button" class="btn btn-info" [routerLink]="['/registro-usuario']" routerLinkActive="active">Nuevo Usuario</button>
+
